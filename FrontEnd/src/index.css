@@ -1,0 +1,161 @@
+/* https://www.youtube.com/watch?v=XNPH4WzC-pY&list=PLIX2rM-jooSuzZVpgi758c7kN4KUxrb95&index=1&t=281s */
+
+/* //https://dev.to/annequinkenstein/adding-fonts-to-create-react-app-3ed7 */
+
+:root {
+  --primary-color: #585454;
+  --main-bg: #000;
+  --main-color: #e27423;
+  --text-main-color: #fff;
+  --text-second-color: #fff;
+  --text-white: #fff;
+  --btn-main-bg: #e27423;
+  --btn-main-color: #fff;
+  --box-shadow: rgba(0, 0, 0, 0.5) 0px 1em 1em;
+  --orange: #fbb96b;
+  --blue: #4267b2;
+  --white: #fff;
+  --black: #000;
+  --main: var(--main-color);
+
+  --header-desktop-height: 60px;
+  --header-tablet-height: 40px;
+  --header-mobile-height: 40px;
+  --header-shrink-height: 50px;
+  --desktop-width: 1440px;
+  --tablet-width: 1024px;
+  --mobile-width: 600px;
+
+  --desktop-padding: 0 32px;
+  --tablet-padding: 0 20px;
+  --mobile-padding: 0 10px;
+}
+
+@font-face {
+  font-family: "Emelind";
+  src: local("Emelind"), url("./font/Emelind.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  font-family: "Emelind", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  /* user-select: none; */
+  /* transition: all 3s linear; */
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow: hidden;
+
+  width: 100%;
+}
+
+body {
+  background: #eee;
+  white-space: nowrap;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: var(--text-white);
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--desktop-width);
+  padding: var(--desktop-padding);
+  margin: 0 auto;
+}
+
+section {
+  max-width: 100%;
+}
+
+.btn {
+  padding: 1em 2em;
+  border-radius: 3em;
+  font-weight: 300;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--btn-main-bg);
+  color: var(--btn-main-color);
+}
+
+.btn:hover {
+  background: var(--text-main-color);
+  color: var(--btn-main-bg);
+  border: 1px solid var(--btn-main-bg);
+}
+
+.btn-primary {
+  background: var(--main-color);
+  color: var(--text-main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black);
+  font-family: "Emelind", sans-serif;
+  font-weight: 800;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 3.2em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4,
+h5 {
+  font-size: 1.4em;
+  font-family: "Emelind", sans-serif;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 6em;
+}
+
+.flex {
+  display: flex;
+}
